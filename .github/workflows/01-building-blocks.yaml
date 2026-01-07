@@ -15,7 +15,7 @@ jobs:
       - name: "fixed failed step"
         run: |
           echo "I now running fine"
-          exit 1
+          exit 0
       - name: "Say goodbye"    
         run: 
           echo "Goodbye"
