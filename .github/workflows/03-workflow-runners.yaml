@@ -1,7 +1,6 @@
 name: 03 - Workflow Runners
 
 on: 
-  push:
   workflow_dispatch:
 
 
@@ -11,4 +10,18 @@ jobs:
     steps:
       - name: Show OS
         run: |
-          echo "I've been running on $RUNNER_OS OS."
+          echo "Irunning on $RUNNER_OS OS."
+
+  Microsoft-echo:        
+    runs-on: microsoft-latest
+    steps:
+      - name: Show OS
+        run: |
+          echo "Irunning on $RUNNER_OS OS."
+
+  Mac-echo:
+    runs-on: mac-latest
+    steps:
+      - name: Show OS
+        run: |
+          echo "Irunning on $RUNNER_OS OS."
