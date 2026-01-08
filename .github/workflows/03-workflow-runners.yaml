@@ -16,6 +16,7 @@ jobs:
     runs-on: microsoft-latest
     steps:
       - name: Show OS
+        shell: bash
         run: |
           echo "I'm running on $RUNNER_OS OS."
 
