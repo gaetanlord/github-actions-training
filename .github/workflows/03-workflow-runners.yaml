@@ -21,7 +21,7 @@ jobs:
           echo "I'm running on $RUNNER_OS OS."
 
   Mac-echo:
-    runs-on: mac-latest
+    runs-on: macos-latest
     steps:
       - name: Show OS
         run: |
